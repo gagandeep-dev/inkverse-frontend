@@ -50,7 +50,6 @@ body,html{
     font-weight: 800;
 }
 .login-form-container{
-    margin-top: 50px;
     width: fit-content;
     padding: 50px;
     background-color: rgba(165, 42, 42, 0.721);
