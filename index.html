@@ -21,33 +21,43 @@
     <header class="header">
         <div class="header-part-1">
             <h1 class="orbitron">InkVerse</h1>
-            <button type="button" id="menu-button">Menu <i class="ri-arrow-down-double-line"></i></button>
+            <div class="menu-container">
 
+                <button type="button" id="menu-button">Menu  <i class="ri-arrow-down-double-line"></i></a></button>
+                <ul class="menu-items" id="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending-this-week">Products</a></li>
+                    <li><a href="cart/cart.html">Cart</a></li>
+                    <li><a href="#footer">Contact us</a></li>
+                </ul>
+            </div>
+            
         </div>
         <div class="header-part-2">
             <input type="search" name="search-bar" id="search-bar" placeholder="Find Books Here... ">
-            <button type="button"id="go-button">Go</button>
+            <button type="button"id="go-button"><a href=""><i class="ri-search-line"></i></a></button>
+                
         </div>
         <div class="header-part-3">
-            <button type="button" id="cart">Cart</button>
-            <button type="button" id="sign-in">Sign in</button>
-            <button type="button" id="create-account">Create Account</button>
+            <button type="button" id="cart"><a href="cart/cart.html" style="text-decoration: none;">Cart</a></button>
+            <button type="button" id="sign-in" ><a href="sign-up/login.html" style="text-decoration: none;">Sign in</a></button>
+            <button type="button" id="create-account"><a href="login.html" style="text-decoration: none;">Create Account</a></button>
         </div>
     </header>
 
     <section class="hero">
             <h1>Find over 20 million books in InkVerse.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus vero quam architecto fugiat suscipit est perspiciatis excepturi rerum dolor?</p>
-            <button type="button" id="cta">Go to Collection <i class="ri-arrow-right-double-line"></i></button>
+            <button type="button" id="cta"><a href="#Collection" style="text-decoration: none;">Go to Collection <i class="ri-arrow-right-double-line"></i></a></button>
     </section>
 
-    <section class="trending">
+    <section class="trending" id="trending-this-week">
         <h1>Trending this week</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde deserunt rerum fugit consequuntur recusandae eum aspernatur quos odit et?</p>
 
         <div class="card-container">
         <div class="card">
-            <img src="card.jpg" alt="">
+            <img src="images/card.jpg" alt="">
             <h3>Biography</h3>
             <h2>Such a Fun Age</h2>
             <h3>James Sulvan</h3>
@@ -55,7 +65,7 @@
         </div>
 
          <div class="card">
-            <img src="card.jpg" alt="">
+            <img src="images/card.jpg" alt="">
             <h3>Biography</h3>
             <h2>Real Life</h2>
             <h3>James Sulvan</h3>
@@ -63,7 +73,7 @@
         </div>
 
          <div class="card">
-            <img src="card.jpg" alt="">
+            <img src="images/card.jpg" alt="">
             <h3>Biography</h3>
             <h2>Such a Fun Age</h2>
             <h3>James Sulvan</h3>
@@ -71,7 +81,7 @@
         </div>
 
          <div class="card">
-            <img src="card.jpg" alt="">
+            <img src="images/card.jpg" alt="">
             <h3>Biography</h3>
             <h2>Emily and the Backbone</h2>
             <h3>James Sulvan</h3>
@@ -79,7 +89,7 @@
         </div>
 
          <div class="card">
-            <img src="card.jpg" alt="">
+            <img src="images/card.jpg" alt="">
             <h3>Biography</h3>
             <h2>Luster a novel</h2>
             <h3>James Sulvan</h3>
@@ -90,54 +100,54 @@
 
     <section class="services">
         <div class="services-card">
-            <img src="—Pngtree—fast delivery label vector_9056541.png"  alt="">
+            <img src="images/—Pngtree—fast delivery label vector_9056541.png"  alt="">
             <h2>Quick Delivery</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, veniam!</p>
         </div>
         <div class="services-card">
-            <img src="pngfind.com-secure-payment-png-5450362.png"  alt="">
+            <img src="images/pngfind.com-secure-payment-png-5450362.png"  alt="">
             <h2>Secure Payments</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, veniam!</p>
         </div>
         <div class="services-card">
-            <img src="toppng.com-logo-best-quality-508x371.png"  alt="">
+            <img src="images/toppng.com-logo-best-quality-508x371.png"  alt="">
             <h2>Best Quality</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, veniam!</p>
         </div>
     </section>
 
-    <section class="bestsellers">
+    <section class="bestsellers" id="Collection">
         <div class="bestsellers-top">
             <h1>Best Sellers</h1>
             <a href="" style="text-decoration: none;color: black;">View more <i class="ri-arrow-right-line"></i></a>
         </div>
         <div class="bestsellers-card-container">
         <div class="bestsellers-card">
-            <img src="card.jpg" alt="" >
+            <img src="images/card.jpg" alt="" >
             <div class="bestseller-card-content">
                 <h2>So Wild Beast</h2>
                 <p>James Kelvin</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia error, excepturi, rerum iste vero esse impedit omnis itaque commodi quia fugit libero officia quisquam facilis reprehenderit quod dolore culpa dolores?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error distinctio beatae molestias pariatur ullam?</p>
                 <h3>$15.63</h3>
             </div>
         </div>
 
          <div class="bestsellers-card">
-            <img src="card.jpg" alt="" height="200px" width="150px">
+            <img src="images/card.jpg" alt="" height="200px" width="150px">
             <div class="bestseller-card-content">
                 <h2>Life of Wilds</h2>
                 <p>Danie Doe</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quam suscipit exercitationem accusantium praesentium debitis ex iste eos quisquam cupiditate voluptatibus blanditiis, reiciendis repellat voluptas nisi qui nemo sit delectus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel magni aperiam, rem optio voluptatum facilis.</p>
                 <h3>$18.37</h3>
             </div>
         </div>
 
         <div class="bestsellers-card">
-            <img src="card.jpg" alt="" height="200px" width="150px">
+            <img src="images/card.jpg" alt="" height="200px" width="150px">
             <div class="bestseller-card-content">
                 <h2>Story of Everst</h2>
                 <p>Jhon Doe</p>
-                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facere voluptas fugit unde, nostrum deleniti labore accusantium harum modi error at et ipsam quam sed quas impedit dolores, velit nam.</p>
+                <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sequi quam doloremque recusandae. Dolores, numquam.</p>
                 <h3>$25.13</h3>
             </div>
         </div>
@@ -153,25 +163,30 @@
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="footer-part-1">
         <h1>InkVerse</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eos iusto soluta ducimus officia maiores. Dolor, alias ea veritatis ab facere modi id reprehenderit saepe, adipisci eveniet quos quisquam repellat.</p>
         <h4>Follow Us</h4>
         <div class="social-media-img">
-            <img src="facebook.png" alt="" >
-            <img src="twitter.jpg" alt="">
-            <img src="youtube.png" alt="">
-            <img src="instagram.jpg" alt="">
+            <img src="images/twitter.jpg" alt="">
+            <a href="https://www.linkedin.com/in/gagan-deep-1609341b7/"><img src="images/linkedin.png" alt=""></a>
+            <a href="https://www.instagram.com/_gagan.deep1407_/"><img src="images/instagram.jpg" alt=""></a>
         </div>
         </div>
 
         <div class="footer-part-2">
             <h4>Quick Links</h4>
-            <a href="">About us</a>
-            <a href="">Conatct us</a>
-            <a href="">Products</a>
-            <a href="">Login / Sign up</a>
+            <a href="#footer">Conatct us</a>
+            <a href="#trending-this-week">Products</a>
+            <a href="sign-up/login.html">Login / Sign up</a>
+        </div>
+
+        <div class="footer-part-2">
+            <h4>Conatact us</h4>
+            <a href="mailto:gaganbarhpagga@icloud.com">Send me  an Email</a>
+            <a href="tel:+6284957892">Call us</a>
+            
         </div>
 
     </section>

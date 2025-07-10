@@ -1,3 +1,17 @@
+const menuButton = document.getElementById("menu-button");
+const menuContainer = document.querySelector(".menu-container");
+
+menuButton.addEventListener("click", () => {
+  if (window.innerWidth <= 700){
+    menuContainer.classList.toggle("open");
+  }
+});
+
+document.addEventListener("click",(e) => {
+  if (!menuContainer.contains(e.target) && window.innerWidth <= 700){
+    menuContainer.classList.remove("open");
+  }
+});
 // Register plugin
 gsap.registerPlugin(ScrollTrigger);
 

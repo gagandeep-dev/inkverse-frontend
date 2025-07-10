@@ -49,23 +49,56 @@ body,html{
   margin: 1rem;
   
 }
-
+.menu-container{
+  position: relative;
+  display: inline-block;
+}
+.menu-items{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+@media (max-width: 767px){
+  .menu-container.open .menu-items{
+    display: flex;
+  }
+}
+.menu-items li{
+  margin: 8px 0;
+}
+.menu-items ul li a{
+  color: #333;
+  text-decoration: none;
+}
 .header button{
   padding: 0.5rem ;
   margin: 0.5rem;
     background: transparent;
   border: none;
   font-weight: 500;
+}
+.header button a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #111;
+
+}
+.header button :hover{
+  background-color: antiquewhite;
   border-bottom: 2px solid #afa5a5;
-}
-.header button:hover{
-border-top: 2px solid #afa5a5;
-border-right: 2px solid #afa5a5;
-border-left: 2px solid #afa5a5;
-}
+
+} 
 .hero{
   width: 100%;
-  background-image: url('hero-main.jpg');
+  background-image: url('images/hero-main.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -266,8 +299,167 @@ p{
   flex-wrap: wrap;
   gap: 20px;
   font-size: 0.7rem;
-    background-color: antiquewhite;
+  background-color: antiquewhite;
   padding-block: 20px;
 
   justify-content: center;
+}
+
+
+
+
+
+
+
+@media (min-width:700px){
+  .header-part-1 h1{
+    font-size: 50px;
+  }
+  .menu-container:hover .menu-items{
+    display: flex;
+  }
+  .header-part-2{
+    display: flex;
+    color: #111;
+  }
+  .header-part-2 #search-bar{
+    padding: 20px 60px;
+    font-size: 20px;
+  }
+  .header-part-2 i{
+    font-size: 30px;
+  }
+  .header button{
+    font-size: 20px;
+  }
+  .hero{
+    height: 80vh;
+    padding: 5rem;
+  }
+  .hero h1{
+    font-size: 6rem;
+    width: 70%;
+  }
+  .hero p{
+    font-size: 2rem;
+    width: 60%;
+  }
+  .hero #cta{
+    margin-top: 8rem;
+  }
+  .trending h1{
+    font-size: 4rem;
+  }
+  .trending p{
+    font-size: 2rem;
+  }
+  .trending .card{
+    height: 500px;
+    width: 300px;
+  }
+  .services-card h2{
+    font-size: 2rem;
+  }
+  .services-card p{
+    font-size: 1.5rem;
+  }
+  .services-card img{
+    height: 100px;
+  }
+  .bestsellers h1{
+    font-size: 4rem;
+  }
+  .bestsellers-card h2{
+    font-size: 2rem;
+  }
+  .bestsellers-card p{
+    font-size: 1.2rem;
+  }
+  .bestsellers-card h3{
+    font-size: 1.5rem;
+  }
+  .bestsellers-card img{
+  height: 330px;
+  width: 250px;
+  border-radius: 1rem;
+}
+  .card h3{
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+.card h2{
+  font-size: 1.6rem;
+}
+  .card img{
+  border-radius: 1rem;
+  height: 65%;
+  width: 90%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+  .newsletter{
+    height: 40vh;
+  }
+  .newsletter h1{
+    font-size: 3rem;
+    width: 50%;
+
+  }
+    .email-input{
+      margin-top: 6rem;
+    }
+  .email-input #email{
+    width: 30vw;
+    height: 8vh;
+    font-size: 1.2rem;
+  }
+  .email-input #subscribe-button{
+    width: 15vw;
+    height: 8vh;
+    font-size: 1.7rem;
+
+  }
+  .email-input #subscribe-button:hover{
+    background-color: rebeccapurple;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  .footer-part-1 p{
+    margin-block: 20px;
+    font-size: 20px;
+  }
+  .footer{
+    gap: 100px;
+    text-align: left;
+  }
+  .footer-part-1{
+    width: 70%;
+  }
+  .footer-part-1 h1{
+  font-size: 50px;  
+  }
+  .footer-part-1 h4{
+  font-size: 30px;  
+  margin-bottom: 10px;
+  }
+  .footer-part-2{
+    h4{
+      font-size: 50px;
+      font-weight: 500;
+    }
+    a{
+      font-size: 20px;
+    }
+  }
+  .final-footer{
+    justify-content: space-between;
+  }
+  .final-footer h3{
+    font-size: 1rem;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-inline: 30px;
+
+  }
+
 }
